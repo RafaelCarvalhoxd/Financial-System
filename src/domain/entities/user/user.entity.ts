@@ -11,4 +11,6 @@ export interface User {
   phone: string;
   address: string;
   role: Role;
+  createdAt: Date;
+  updatedAt: Date;
 }
