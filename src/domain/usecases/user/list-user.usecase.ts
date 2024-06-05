@@ -6,7 +6,7 @@ export interface ListUserUseCase {
 
 export namespace ListUserUseCase {
   export type Params = {
-    id?: string;
+    ids?: string[];
     name?: string;
     email?: string;
     telefone?: string;
