@@ -1,4 +1,4 @@
-***Initial Config Boilerplate***
+**_Initial Config Boilerplate_**
 
 -Eslint
 -Husky
