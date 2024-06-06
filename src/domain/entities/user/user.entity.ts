@@ -1,7 +1,7 @@
 import { Role } from './role.entity';
 
 export interface User {
-  id: string;
+  id?: string;
   name: string;
   email: string;
   password: string;
@@ -11,6 +11,6 @@ export interface User {
   phone: string;
   address: string;
   role: Role;
-  createdAt: Date;
-  updatedAt: Date;
+  createdAt?: Date;
+  updatedAt?: Date;
 }
