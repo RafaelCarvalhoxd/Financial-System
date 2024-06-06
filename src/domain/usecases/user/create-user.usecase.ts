@@ -1,4 +1,4 @@
-import { Role } from '@/domain/entities/user/role.entity';
+import { Role } from '@/domain/entities/role/role.entity';
 import { User } from '@/domain/entities/user/user.entity';
 
 export interface CreateUserUseCase {

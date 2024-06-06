@@ -1,4 +1,4 @@
-import { Role } from '@/domain/entities/user/role.entity';
+import { Role } from '@/domain/entities/role/role.entity';
 
 export interface CreateRoleUseCase {
   perform(params: CreateRoleUseCase.Params): Promise<CreateRoleUseCase.Result>;
