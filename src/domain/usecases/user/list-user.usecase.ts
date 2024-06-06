@@ -9,7 +9,7 @@ export namespace ListUserUseCase {
     ids?: string[];
     name?: string;
     email?: string;
-    telefone?: string;
+    phone?: string;
     role?: string;
   };
   export type Result = User[];
