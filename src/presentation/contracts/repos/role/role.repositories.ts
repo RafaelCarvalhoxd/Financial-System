@@ -64,7 +64,7 @@ export namespace DeleteRoleRepository {
   export type Params = {
     id: string;
   };
-  export type Result = boolean;
+  export type Result = void;
 }
 
 export interface FindRoleByNameRepository {
