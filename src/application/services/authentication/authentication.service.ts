@@ -1,8 +1,8 @@
 import { AuthorizationError } from '@/domain/errors/authorization.error';
 import { AuthenticateUserUseCase } from '@/domain/usecases/user/authenticate-user.usecase';
-import { HashComparer } from '@/presentation/contracts/gateways/hashcomparer.gateway';
-import { TokenGenerator } from '@/presentation/contracts/gateways/tokengenerator.gateway';
-import { LoadUserByEmailRepository } from '@/presentation/contracts/repos/user/user.repositories';
+import { HashComparer } from '@/application/contracts/gateways/hashcomparer.gateway';
+import { TokenGenerator } from '@/application/contracts/gateways/tokengenerator.gateway';
+import { LoadUserByEmailRepository } from '@/application/contracts/repos/user/user.repositories';
 
 export class AuthenticationService implements AuthenticateUserUseCase {
   constructor(
