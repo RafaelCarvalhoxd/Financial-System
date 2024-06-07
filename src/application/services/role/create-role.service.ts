@@ -14,10 +14,9 @@ export class CreateRoleService implements CreateRoleUseCase {
     const findRoleByName = await this.roleRepository.findRoleByName({
       name: params.name,
     });
-    if (findRoleByName) {
-      throw new Error('Role already exists');
-    }
+    if (findRoleByName) throw new Error('Role already exists');
     const createRole = await this.roleRepository.createRole(params);
+    if (!createRole) throw new Error('Failed to create role');
     return createRole;
   }
 }
