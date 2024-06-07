@@ -18,13 +18,11 @@ export class AuthenticationService implements AuthenticateUserUseCase {
       email: params.email,
     });
     if (!user) throw new AuthorizationError();
-
     const isValid = await this.hashComparer.compare(
       params.password,
       user.password,
     );
     if (!isValid) throw new AuthorizationError();
-
     const token = await this.tokenGenerator.generate({
       id: user.id,
       email: user.email,
