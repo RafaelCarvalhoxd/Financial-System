@@ -34,7 +34,6 @@ export interface CreateRoleRepository {
 
 export namespace CreateRoleRepository {
   export type Params = {
-    id: string;
     name: string;
   };
   export type Result = Role;
@@ -68,7 +67,7 @@ export namespace DeleteRoleRepository {
 }
 
 export interface FindRoleByNameRepository {
-  findRole: (
+  findRoleByName: (
     params: FindRoleByNameRepository.Params,
   ) => Promise<FindRoleByNameRepository.Result>;
 }
